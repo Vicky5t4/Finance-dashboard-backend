@@ -1,0 +1,106 @@
+{
+  "users": [
+    {
+      "id": "9a105e26-a056-463a-b722-185ffbfe388a",
+      "name": "Admin User",
+      "email": "admin@finance.local",
+      "passwordHash": "$2a$10$aMRnw/FMC91IpyMFGyTx3.ZsjsI2v3az4B9Ai7ujcH.O0PdS9UNWy",
+      "role": "admin",
+      "status": "active",
+      "createdAt": "2026-04-01T17:04:51.593Z",
+      "updatedAt": "2026-04-01T17:04:51.593Z"
+    },
+    {
+      "id": "3549981c-cf36-423b-9d76-d3c96151500f",
+      "name": "Analyst User",
+      "email": "analyst@finance.local",
+      "passwordHash": "$2a$10$kYZ5uU5r2sJQBGuQPDEsNOUAagUORn1q1lMHA4f1U0b.S0ypO448W",
+      "role": "analyst",
+      "status": "active",
+      "createdAt": "2026-04-01T17:04:51.593Z",
+      "updatedAt": "2026-04-01T17:04:51.593Z"
+    },
+    {
+      "id": "a46138d6-fcee-4fe3-851c-6fc1b4926fa3",
+      "name": "Viewer User",
+      "email": "viewer@finance.local",
+      "passwordHash": "$2a$10$wiLCan8SesNoIXd3OD9XW.nxqmBM.fqIiOZxbYlnLkPG9fhvDSeFu",
+      "role": "viewer",
+      "status": "active",
+      "createdAt": "2026-04-01T17:04:51.593Z",
+      "updatedAt": "2026-04-01T17:04:51.593Z"
+    }
+  ],
+  "records": [
+    {
+      "id": "f6b52895-edbc-41ef-896b-f399b3044752",
+      "amount": 50000,
+      "type": "income",
+      "category": "Salary",
+      "date": "2026-03-01",
+      "notes": "Monthly salary credit",
+      "createdBy": "system",
+      "updatedBy": "system",
+      "createdAt": "2026-04-01T17:04:51.849Z",
+      "updatedAt": "2026-04-01T17:04:51.849Z",
+      "isDeleted": false
+    },
+    {
+      "id": "f002c382-972f-497a-9a8c-cc5dc647f453",
+      "amount": 12000,
+      "type": "expense",
+      "category": "Rent",
+      "date": "2026-03-03",
+      "notes": "Apartment rent",
+      "createdBy": "system",
+      "updatedBy": "system",
+      "createdAt": "2026-04-01T17:04:51.849Z",
+      "updatedAt": "2026-04-01T17:04:51.849Z",
+      "isDeleted": false
+    },
+    {
+      "id": "bd7fa250-348b-42ea-8778-81e3db9bb9a1",
+      "amount": 3500,
+      "type": "expense",
+      "category": "Groceries",
+      "date": "2026-03-08",
+      "notes": "Weekly groceries",
+      "createdBy": "system",
+      "updatedBy": "system",
+      "createdAt": "2026-04-01T17:04:51.849Z",
+      "updatedAt": "2026-04-01T17:04:51.849Z",
+      "isDeleted": false
+    },
+    {
+      "id": "6f1f1a20-1a50-49df-9cdf-87ab7c9f776a",
+      "amount": 8000,
+      "type": "income",
+      "category": "Freelance",
+      "date": "2026-03-10",
+      "notes": "Website project payment",
+      "createdBy": "system",
+      "updatedBy": "system",
+      "createdAt": "2026-04-01T17:04:51.849Z",
+      "updatedAt": "2026-04-01T17:04:51.849Z",
+      "isDeleted": false
+    },
+    {
+      "id": "03af3571-3267-4f4f-a883-f9b46de69b30",
+      "amount": 2200,
+      "type": "expense",
+      "category": "Utilities",
+      "date": "2026-03-15",
+      "notes": "Electricity and internet bill",
+      "createdBy": "system",
+      "updatedBy": "system",
+      "createdAt": "2026-04-01T17:04:51.849Z",
+      "updatedAt": "2026-04-01T17:04:51.849Z",
+      "isDeleted": false
+    }
+  ],
+  "meta": {
+    "storageMode": "file",
+    "createdAt": "2026-04-01T17:04:51.849Z",
+    "updatedAt": "2026-04-01T17:04:51.849Z"
+  }
+}

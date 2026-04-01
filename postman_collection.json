@@ -1,0 +1,102 @@
+{
+  "info": {
+    "name": "Finance Dashboard Backend Assignment",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:5000"
+    },
+    {
+      "key": "token",
+      "value": ""
+    }
+  ],
+  "item": [
+    {
+      "name": "Login Admin",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"admin@finance.local\",\n  \"password\": \"Admin@123\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/auth/login",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "auth", "login"]
+        }
+      }
+    },
+    {
+      "name": "Get Records",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/records?page=1&limit=10",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "records"],
+          "query": [
+            { "key": "page", "value": "1" },
+            { "key": "limit", "value": "10" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Create Record",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"amount\": 1500,\n  \"type\": \"expense\",\n  \"category\": \"Travel\",\n  \"date\": \"2026-03-20\",\n  \"notes\": \"Cab fares\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/records",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "records"]
+        }
+      }
+    },
+    {
+      "name": "Dashboard Summary",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/summary/dashboard",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "summary", "dashboard"]
+        }
+      }
+    }
+  ]
+}

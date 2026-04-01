@@ -1,0 +1,16 @@
+@baseUrl = http://localhost:5000
+
+### Login as admin
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@finance.local",
+  "password": "Admin@123"
+}
+
+### Health
+GET {{baseUrl}}/health
+
+### Root
+GET {{baseUrl}}/

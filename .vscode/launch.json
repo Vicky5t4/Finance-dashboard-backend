@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run Finance Backend",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "skipFiles": ["<node_internals>/**"],
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
